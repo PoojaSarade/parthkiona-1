@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <title>Parth Kiona - Real Estate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <img src="img/logo1.png" alt="Parth Kiona Logo" class="logo">
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#amenities">Amenities</a>
+            <a href="#floorplan">Floor Plan</a>
+            <a href="#pricelist">Price List</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#location">Location</a>
+        </div>
+        <a href="#" class="contact-button">+91-9000110110</a>
+        <button class="hamburger" id="hamburgerBtn">☰</button>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#">Home</a>
+        <a href="#amenities">Amenities</a>
+        <a href="#floorplan">Floor Plan</a>
+        <a href="#pricelist">Price List</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#location">Location</a>
+        <a href="tel:+919000110110">+91-9000110110</a>
+    </div>
+    
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="property-info">
+            <h1>Parth Kiona</h1>
+            <p>At Hinjewadi, Pune</p>
+            
+            <div class="features">
+                <div class="feature">
+                    <i>→</i>
+                    <span>Land Area 5.5 Acres</span>
+                </div>
+                <div class="feature">
+                    <i>→</i>
+                    <span>Limited Time Period Offer</span>
+                </div>
+                <div class="feature">
+                    <i>→</i>
+                    <span>Beautiful Floor Lobbies</span>
+                </div>
+                <div class="feature">
+                    <i>→</i>
+                    <span>High-Speed Elevators</span>
+                </div>
+            </div>
+            
+            <div>
+                <p>Luxury 2 & 3 BHK Apartments Starts:</p>
+                <div class="price">
+                    ₹ 74 Lacs* <span>Onwards</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contact-form" id="contactform" action="https://formsubmit.co/priyasatpute01@gmail.com" method="POST">
+            <h3>Get In Touch With Us</h3>
+            <div class="form-group">
+                <div class="form-control">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Your Name" style="background-color: black; color: white;">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-control">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Your Email" style="background-color: black; color: white;">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-control">
+                    <i class="fas fa-phone"></i>
+                    <input type="tel" placeholder="Your Number" style="background-color: black; color: white;">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-control">
+                    <i class="fas fa-comment-alt"></i>
+                    <input type="msg" placeholder="Your Message" style="background-color: black; color: white;">
+                </div>
+            </div>
+              <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="Website Contact Form">
+            <button class="btn">SUBMIT</button>
+            <button class="btn btn-phone">📞 +91-9000110110</button>
+        </div>
+    </div>
+    
+    <!-- Popup -->
+    <div class="overlay" id="popupOverlay">
+        <div class="popup">
+            <button class="close-btn" id="closePopup" onclick="window.closeAnyPopup()">×</button>
+            <div class="popup-header">
+                <h2>Parth Kiona</h2>
+            </div>
+            <div class="popup-body">
+                <div class="property-type">
+                    <strong>Type : </strong>At Hinjewadi, Pune
+                </div>
+                <form id="popupForm" action="https://formsubmit.co/poojasarade01@gmail.com" method="POST">
+                    <div class="form-group">
+                        <div class="form-control">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-control">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-control">
+                            <i class="fas fa-phone"></i>
+                            <input type="tel" placeholder="Your Number" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-control">
+                            <i class="fas fa-comment-alt"></i>
+                            <input type="msg" placeholder="Your Message" required>
+                        </div>
+                    </div>
+                        <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="Website Contact Form">
+
+                    <button type="submit" class="btn">SUBMIT</button>
+                    <button type="button" class="btn btn-phone">📞 +91-9000110110</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ///////////////////////////////////////////////////////////////////////////// -->
+   
+    <section class="pk-property-overview">
+        <div class="pk-image-container">
+            <img src="img/about_img.png" alt="Aerial view of Parth Kiona residential complex">
+        </div>
+        
+        <div class="pk-content-container">
+            <div>
+                <h1 class="pk-project-title">Parth Kiona</h1>
+                
+                <p class="pk-project-description">
+                    Presenting Parth Kiona - a beautiful project, a well-planned living space which is the hallmark of 
+                    thoughtfully laid out flats at reasonable prices. Parth Kiona brings a lifestyle that befits royalty 
+                    with its beautiful apartments at Hinjawadi. Your home will now serve as a perfect get-away after 
+                    a tiring day at work, as Parth Kiona will make you forget that you are living in the heart of the 
+                    city. These residential apartments in Hinjawadi offer luxurious homes that amazingly escape the 
+                    noise of the city center. The beautiful views and cross ventilation make your home a peaceful 
+                    abode. In addition to that, there are a number of benefits of living in apartments with a good 
+                    locality. Parth Kiona is conveniently located at Hinjawadi to provide unmatched connectivity 
+                    from all the important landmarks and places of everyday utility such as various well-known 
+                    hospitals, educational institutions, super-marts, parks, entertainment spots, recreational centers
+                    .
+                </p>
+            </div>
+
+            <div>
+                <div class="pk-features">
+                    <div class="pk-feature">
+                        <svg class="pk-feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                        </svg>
+                        <span class="pk-feature-text">Prime Locations</span>
+                    </div>
+                    
+                    <div class="pk-feature">
+                        <svg class="pk-feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+                        </svg>
+                        <span class="pk-feature-text">Innovative Design</span>
+                    </div>
+                    
+                    <div class="pk-feature">
+                        <svg class="pk-feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 2h1.5v3l2-3h1.7l-2 3 2 3h-1.7l-2-3v3H12V5zM7 7.25h2.5V6.5H7V5h4v3.75H8.5v.75H11V11H7V7.25zM19 13l-6 6-4-4-4 4v-2.5l4-4 4 4 6-6V13z"/>
+                        </svg>
+                        <span class="pk-feature-text">Commitment to Quality</span>
+                    </div>
+                </div>
+                
+                <button class="download-btn">
+                    Download Brochure
+                    <svg class="download-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+    
+    </section>
+    <div class="query-now" onclick="openParthKionaModal('Query Now')">Query Now</div> 
+ <div id="parthKionaFormModal" class="pk-modal">
+  <div class="pk-modal-content">
+    <span class="pk-close" onclick="closeParthKionaModal()">&times;</span>
+    <h2 id="pkModalTitle" style="margin-bottom: 20px; color: #D9A941;">Contact Us</h2>
+
+    <form id="pkContactForm" action="https://formsubmit.co/poojasarade01@gmail.com" method="POST">
+      <div class="pk-form-group">
+        <label for="pkName">Full Name</label>
+        <input type="text" id="pkName" name="Full Name" required>
+      </div>
+
+      <div class="pk-form-group">
+        <label for="pkEmail">Email Address</label>
+        <input type="email" id="pkEmail" name="Email" required>
+      </div>
+
+      <div class="pk-form-group">
+        <label for="pkPhone">Phone Number</label>
+        <input type="tel" id="pkPhone" name="Phone" required>
+      </div>
+
+      <div class="pk-form-group">
+        <label for="pkmsg">Message</label>
+        <textarea id="pkmsg" name="Message" required></textarea>
+      </div>
+
+      <!-- Hidden FormSubmit config -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="Website Contact Form Submission">
+
+      <button type="submit" class="btn">SUBMIT</button>
+    </form>
+  </div>
+</div>
+
+
+    </div>
+    <div class="overlaya"></div>
+    <div class="containerr" id="pricelist">
+        <h1 class="titlee">Price List</h1>
+        
+        <div class="price-cards">
+            <div class="price-card">
+                <div class="number-badge">01</div>
+                <p class="price" style="font-size: 20px;">₹ 74 Lacs* Onwards</p>
+                <div class="details">
+                    <div class="detail-row">
+                        <span class="label">Typology :</span>
+                        <span class="value">2 BHK</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Area :</span>
+                        <span class="value">761 - 767 Sq.ft</span>
+                    </div>
+                </div>
+                <button class="know-more-btn" id="knowMoreBtn1" onclick="openParthKionaModal('Parth Kiona')">
+                    Know More 
+                    <span class="arrow-icon"></span>
+                </button>
+            </div>
+            
+            <div class="price-card">
+                <div class="number-badge">02</div>
+                <p class="price" style="font-size: 20px;">₹ 90.2 Lacs* Onwards</p>
+                <div class="details">
+                    <div class="detail-row">
+                        <span class="label">Typology :</span>
+                        <span class="value">3 BHK</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Area :</span>
+                        <span class="value">On Request</span>
+                    </div>
+                </div>
+                <button class="know-more-btn" id="knowMoreBtn2" onclick="openParthKionaModal('Parth Kiona')">
+                    Know More 
+                    <span class="arrow-icon"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- /*********************************************************************/ -->
+    <div class="containers">
+        <div class="highlights-content">
+            <h1>Our Highlights</h1>
+            <p class="intro-text">Our Low Rise Floors feature spacious layouts that provide you with room to breathe and make your space truly your own.</p>
+            
+            <div class="highlight-item">
+                <div class="number-circle">01</div>
+                <div class="highlight-text">Project Status New Launch</div>
+            </div>
+            
+            <div class="highlight-item">
+                <div class="number-circle">02</div>
+                <div class="highlight-text">Expansive Green Spaces: Relax and unwind in beautifully landscaped areas designed for recreation and tranquility.</div>
+            </div>
+            
+            <div class="highlight-item">
+                <div class="number-circle">03</div>
+                <div class="highlight-text">Land Area 5.5 Acres</div>
+            </div>
+            
+            <div class="highlight-item">
+                <div class="number-circle">04</div>
+                <div class="highlight-text">No. of Towers & Floors B2 + 22 Storeys</div>
+            </div>
+        </div>
+        
+        <div class="image-containers">
+            <img src="img/highlight_img.png" alt="Outdoor yoga area with wooden deck and yoga mats">
+        </div>
+    </div>
+    <!-- /******************************************************************/ -->
+    <section class="schedule-section">
+        <div class="section-content">
+            <h1 style="padding-right: 300px;">Schedule A Visit</h1>
+            <p class="location">Parth Kiona At Hinjewadi, Pune</p>
+            <button class="know-more-btn"onclick="openParthKionaModal('Parth Kiona')">
+                Know More
+                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+            </button>
+        </div>
+    </section>
+    <!-- /*******************************************************************/ -->
+    <div class="container" id="gallery">
+        <h1>Our Gallery</h1>
+        <div class="gallery">
+            <div class="gallery-item" data-index="0">
+                <img src="img/gallery_img1.jpg" alt="Yoga deck with plants">
+                <div class="search-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#333" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="gallery-item" data-index="1">
+                <img src="img/gallery_img2.jpg" alt="Wooden architectural structure">
+                <div class="search-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#333" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="gallery-item" data-index="2">
+                <img src="img/gallery_img3.jpg" alt="Children's playground">
+                <div class="search-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#333" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="gallery-item" data-index="3">
+                <img src="img/gallery_img4.jpg" alt="Swimming pool">
+                <div class="search-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#333" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="gallery-item" data-index="4">
+                <img src="img/gallery_img5.jpg" alt="Apartment buildings">
+                <div class="search-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#333" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="close-btna">&times;</button>
+            <img src="" alt="" class="lightbox-img" id="lightbox-img">
+            <div class="nav-buttons">
+                <button class="nav-btn prev-btn">&lt;</button>
+                <button class="nav-btn next-btn">&gt;</button>
+    
+            </div>
+        </div>
+    </div>
+
+    <!-- /***************************************************************************/ -->
+    <div class="features-container" id="amenities">
+        <h1>Features & Amenities</h1>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="icon">
+                    <img src="img/Amphitheatre.png" alt="Amphitheatre Icon">
+                </div>
+                <p class="feature-name">Amphitheatre</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">
+                    <img src="img/Swimming Pool.png" alt="Swimming Pool Icon">
+                </div>
+                <p class="feature-name">Swimming Pool</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">
+                    <img src="img/Yoga.png" alt="Yoga Icon">
+                </div>
+                <p class="feature-name">Yoga</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">
+                    <img src="img/Kid's Play Area.png" alt="Kid's Play Area Icon">
+                </div>
+                <p class="feature-name">Kid's Play Area</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">
+                    <img src="img/Gym.png" alt="Gym Icon">
+                </div>
+                <p class="feature-name">Gym</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">
+                    <img src="img/Badminton Court.png" alt="Badminton Court Icon">
+                </div>
+                <p class="feature-name">Badminton Court</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">
+                    <img src="img/Indoor Games.png" alt="Indoor Games Icon">
+                </div>
+                <p class="feature-name">Indoor Games</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">
+                    <img src="img/CCTV.png" alt="CCTV Icon">
+                </div>
+                <p class="feature-name">CCTV</p>
+            </div>
+        </div>
+    </div>
+    <!-- /**************************************************************/ -->
+    <div class="container" id="floorplan">
+        <h1 class="title">Floor Plan</h1>
+        
+        <div class="floor-plan-container">
+            <div class="floor-plan-card">
+                <div class="floor-plan-image floor-plan-image-2bhk">
+                    <button class="view-plan-btn" onclick="openParthKionaModal('View Plan')">View Plan</button>
+                </div>
+                <div class="floor-plan-footer">2 BHK</div>
+            </div>
+            
+            <div class="floor-plan-card">
+                <div class="floor-plan-image floor-plan-image-master">
+                    <button class="view-plan-btn" onclick="openParthKionaModal('View Plan')">View Plan</button>
+                </div>
+                <div class="floor-plan-footer">Master Plan</div>
+            </div>
+            
+            <div class="floor-plan-card">
+                <div class="floor-plan-image floor-plan-image-3bhk">
+                    <button class="view-plan-btn" onclick="openParthKionaModal('View Plan')">View Plan</button>
+                </div>
+                <div class="floor-plan-footer">3 BHK</div>
+            </div>
+        </div>
+    </div>
+<!--      
+    /**************************************************************************/ -->
+    <div class="location-container" id="location">
+        <div class="map-container">
+            <img src="img/location_invest1.png" alt="Location Map" class="map-image">
+        </div>
+        
+        <div class="location-details">
+            <h2 class="location-title">Location</h2>
+            
+            <ul class="location-list">
+                <li class="location-item">
+                    <div class="location-icon"></div>
+                    Metro station, Shivaji chowk – 3.7 km
+                </li>
+                
+                <li class="location-item">
+                    <div class="location-icon"></div>
+                    Pune-Mumbai Expressway – 4.8 km
+                </li>
+                
+                <li class="location-item">
+                    <div class="location-icon"></div>
+                    Pune international Airport – 25.5 km
+                </li>
+                
+                <li class="location-item">
+                    <div class="location-icon"></div>
+                    Hinjawadi Flyover – 4.9 km
+                </li>
+                
+                <li class="location-item">
+                    <div class="location-icon"></div>
+                    Akurdi Railway Station – 11.9 km
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /****************************************************************/ -->
+    <div class="containerfooter">
+        <div class="about-section">
+            <h2 class="about-title">About Developer</h2>
+            <p class="about-text">
+                For more than three decades, Parth Group has been a cornerstone in Pune's real estate 
+                sector, renowned for its unwavering reliability and commitment. With a vast portfolio 
+                spanning over 12 million square feet, each project is a testament to our team's passion 
+                and dedication. We take pride in our track record of successfully delivering 30 projects, 
+                providing homes to over 10,000 families. Chandak Group upholds its motto, Promises 
+                Made. Promises Kept., reflecting our integrity and steadfast commitment to ensuring 
+                customer satisfaction.
+            </p>
+            
+            <p class="project-reg">Projects Rera : P52100055852</p>
+            
+            <div class="contact-us">
+                <div class="contact-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" viewBox="0 0 16 16">
+                        <path d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                    </svg>
+                </div>
+                <div class="contact-info">
+                    <span class="call-us">Call Us Anytime</span>
+                    <span class="phone-number">+91-9000110110</span>
+                </div>
+            </div>
+        </div>
+
+<div class="form-section">
+    <div class="form-header">Schedule A Site Visit</div>
+    <div class="form-content">
+        <form action="https://formsubmit.co/poojasarade01@gmail.com" method="POST">
+            
+            <div class="form-group">
+                <div class="input-with-icon">
+                    <span class="input-icon"><i class="fas fa-user"></i></span>
+                    <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="input-with-icon">
+                    <span class="input-icon"><i class="fas fa-envelope"></i></span>
+                    <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="input-with-icon">
+                    <span class="input-icon"><i class="fas fa-phone"></i></span>
+                    <input type="tel" class="form-control" name="phone" placeholder="Your Number">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="input-with-icon">
+                    <span class="input-icon"><i class="fas fa-comment-alt"></i></span>
+                    <input type="msg" class="form-control" name="message" placeholder="Your Message">
+                </div>
+            </div>
+
+            <!-- Hidden FormSubmit options -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="Website Contact Form">
+
+            <button type="submit" class="book-now-btn">SUBMIT</button>
+        </form>
+    </div>
+</div>
+
+    
+    <div class="disclaimer">
+        <strong>Disclaimer:</strong>The content is for information purposes only and does not constitute an offer to avail of any service. Prices mentioned are subject to change without notice and properties mentioned are subject to availability. Images for representation purposes only.
+    </div>
+    
+    <div class="footer">
+      
+        <a href="policy.html"><span>Privacy & Policy</span></a>
+
+    </div>
+    
+    <script src="script.js"></script>
+    </body>
+    </html>
